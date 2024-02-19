@@ -1,0 +1,6 @@
+1. Create a form with name and email address
+  1. Input box ke andar ka text variable m lena pdega
+2. Data will submit to the server using POST route
+3. We will get the data using GET route
+4. Update the data using PUT route
+5. Delete the data using DELETE route
