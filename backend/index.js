@@ -34,3 +34,5 @@ app.listen(8080, () => {
 // POST -> ENDPOINT,  DATA,HEADERS
 
 let data = [];
+    const logger = require('pino')();
+    logger.info({ event: 'submit', status: 'success' }, 'Form submission');
