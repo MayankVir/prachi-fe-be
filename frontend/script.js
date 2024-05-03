@@ -52,3 +52,6 @@ submitButton.onclick = async () => {
     tableElement.appendChild(newTr);
   }
 };
+function handleNetworkError(error) {
+  alert('Failed to fetch data. Please try again later.');
+}

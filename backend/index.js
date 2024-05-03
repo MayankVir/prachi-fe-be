@@ -34,3 +34,4 @@ app.listen(8080, () => {
 // POST -> ENDPOINT,  DATA,HEADERS
 
 let data = [];
+app.use('/api/:route', validateRequest);
