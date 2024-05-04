@@ -34,3 +34,10 @@ app.listen(8080, () => {
 // POST -> ENDPOINT,  DATA,HEADERS
 
 let data = [];
+try {
+  const res = await dbPool.query('SELECT * FROM yourTable WHERE condition = $1', [value]);
+  console.log(res.rows);
+} catch (err) {
+  console.error('Database query error', err.stack);
+  // Return user-friendly error message
+}

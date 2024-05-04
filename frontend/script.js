@@ -52,3 +52,11 @@ submitButton.onclick = async () => {
     tableElement.appendChild(newTr);
   }
 };
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('your/api/endpoint', {
+    method: 'GET', // or 'POST'
+  })
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error fetching data:', error));
+});

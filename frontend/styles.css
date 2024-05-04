@@ -1,3 +1,12 @@
 body {
   background-color: gray;
 }
+/* Optimize CSS for faster rendering */
+body, .container {
+  will-change: transform;
+}
+
+.expensive-effect {
+  box-shadow: none; /* Remove or reduce expensive properties */
+  border-radius: 0; /* Simplify styles for critical elements */
+}
