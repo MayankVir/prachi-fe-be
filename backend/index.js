@@ -34,3 +34,8 @@ app.listen(8080, () => {
 // POST -> ENDPOINT,  DATA,HEADERS
 
 let data = [];
+// Database Query Optimization
+// For each database query in the application
+//     Use indexed columns for search queries
+//     Limit the number of rows returned to what's strictly necessary
+

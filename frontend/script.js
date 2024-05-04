@@ -52,3 +52,8 @@ submitButton.onclick = async () => {
     tableElement.appendChild(newTr);
   }
 };
+// User Interaction Feedback
+// On user action (e.g., button click)
+//     Display loading indicator
+//     Perform action
+//     Remove loading indicator once action is complete

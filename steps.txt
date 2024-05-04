@@ -3,4 +3,7 @@
 2. Data will submit to the server using POST route
 3. We will get the data using GET route
 4. Update the data using PUT route
-5. Delete the data using DELETE route
+5. Delete the data using DELETE route// Documentation of optimization steps and rationale
+// For each optimization step
+//     Write down the file and function modified
+//     Briefly describe the change and expected impact
