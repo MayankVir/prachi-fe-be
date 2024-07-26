@@ -34,3 +34,14 @@ app.listen(8080, () => {
 // POST -> ENDPOINT,  DATA,HEADERS
 
 let data = [];
+// Database Query Optimization
+// Example optimized query
+app.get('/api/data', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM table WHERE column = $1 LIMIT 100', [req.query.value]);
+    res.json(result.rows);
+  } catch (err) {
+    console.error('Error executing query', err.stack);
+    res.status(500).send('Error fetching data');
+  }
+});

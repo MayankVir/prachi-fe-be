@@ -3,4 +3,11 @@
 2. Data will submit to the server using POST route
 3. We will get the data using GET route
 4. Update the data using PUT route
-5. Delete the data using DELETE route
+5. Delete the data using DELETE route// Documentation of Optimization Steps
+1. Backend Database Connection Pooling: Optimized the database connection pool settings in backend/index.js for better performance and resource management.
+2. Database Query Optimization: Introduced query optimization techniques in backend/index.js to improve database interaction efficiency.
+3. Error Handling Improvement: Enhanced error handling in backend/index.js for clearer error messages and logging.
+4. Frontend Data Fetching: Optimized data fetching in frontend/script.js with pagination and local caching.
+5. CSS Layout Optimization: Improved CSS rendering performance in frontend/styles.css by minimizing expensive properties.
+6. User Interaction Feedback: Implemented immediate feedback for user actions in frontend/script.js to enhance user experience.
+7. .gitignore Maintenance: Updated backend/.gitignore to exclude unnecessary files and directories from version control.
