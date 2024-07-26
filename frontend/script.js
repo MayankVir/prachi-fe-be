@@ -52,12 +52,3 @@ submitButton.onclick = async () => {
     tableElement.appendChild(newTr);
   }
 };
-// User Interaction Feedback
-async function handleUserAction(action) {
-  showLoadingIndicator();
-  try {
-    await performAction(action);
-  } finally {
-    hideLoadingIndicator();
-  }
-}
